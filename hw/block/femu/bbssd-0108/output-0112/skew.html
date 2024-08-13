@@ -1,0 +1,46 @@
+<title>Vdbench output/skew.html</title><pre>
+Workload skew report
+
+Skew information will only be generated if:
+ - there is more than one Workload Definition (WD/FWD)
+ - there is more than one Storage Definition (SD/FSD)
+ - there is more than one Host
+ - there is more than one Slave
+(Though these rules may be ignored from time to time).
+
+
+Link to Run Definitions:         <A HREF="#_914424520">run1 For loops: None</A>
+
+
+<a name="_914424520"></a><i><b>15:28:17.003 Starting RD=run1; I/O rate: Uncontrolled MAX; elapsed=600; For loops: None</b></i>
+
+15:38:17.056 
+15:38:17.056 Counts reported below are for non-warmup intervals.
+15:38:17.056 
+15:38:17.056                    i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+15:38:17.056 Slave:            rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+15:38:17.057 localhost-0   45753.11   178.72    4096  52.19    0.344    0.188    0.515 1656.117    4.925  15.8 
+15:38:17.057 localhost-1   45829.51   179.02    4096  52.23    0.344    0.188    0.515 1656.126    4.918  15.8 
+15:38:17.057 localhost-2   45730.17   178.63    4096  52.19    0.344    0.189    0.514 1656.087    4.934  15.7 
+15:38:17.057 localhost-3   45740.81   178.68    4096  52.20    0.344    0.189    0.515 1656.035    4.943  15.7 
+15:38:17.057 Total        183053.60   715.05    4096  52.20    0.344    0.188    0.515 1656.126    4.930  63.0 
+15:38:17.057 
+15:38:17.057                    i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+15:38:17.057 SD:               rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+15:38:17.058 sd1           22343.99    87.28    4096   0.00    0.708    0.000    0.708 1656.126   11.598  15.8 
+15:38:17.058 sd2           42019.15   164.14    4096  20.01    0.374    0.266    0.401 1211.666    2.955  15.7 
+15:38:17.058 sd3           31540.68   123.21    4096   0.00    0.499    0.000    0.499 1183.048    5.208  15.7 
+15:38:17.058 sd4           87149.78   340.43    4096 100.00    0.181    0.181    0.000  464.603    1.573  15.8 
+15:38:17.058 Total        183053.60   715.05    4096  52.20    0.344    0.188    0.515 1656.126    4.930  63.0 
+15:38:17.058 
+15:38:17.058 Calculated versus requested workload skew. (Delta only shown if > 0.10% absolute)
+15:38:17.058 Note that for an Uncontrolled MAX run workload skew is irrelevant.
+15:38:17.058 This was an Uncontrolled MAX run.
+15:38:17.058 
+15:38:17.058                    i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue       skew     skew    skew 
+15:38:17.058 WD:               rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth  requested observed   delta 
+15:38:17.059 wd1           22343.99    87.28    4096   0.00    0.708    0.000    0.708 1656.126   11.598  15.8     25.00%   12.21%  12.79%
+15:38:17.059 wd2           42019.15   164.14    4096  20.01    0.374    0.266    0.401 1211.666    2.955  15.7     25.00%   22.95%   2.05%
+15:38:17.060 wd3           31540.68   123.21    4096   0.00    0.499    0.000    0.499 1183.048    5.208  15.7     25.00%   17.23%   7.77%
+15:38:17.060 wd4           87149.78   340.43    4096 100.00    0.181    0.181    0.000  464.603    1.573  15.8     25.00%   47.61% -22.61%
+15:38:17.060 Total        183053.60   715.05    4096  52.20    0.344    0.188    0.515 1656.126    4.930  63.0    100.00%  100.00%

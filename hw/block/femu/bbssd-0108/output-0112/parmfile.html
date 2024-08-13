@@ -1,0 +1,31 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: /home/femu/vdbench/mytest-test
+
+
+*
+* Copyright (c) 2000, 2012, Oracle and/or its affiliates. All rights reserved.
+*
+
+*
+* Author: Henk Vandenbergh.
+*
+
+
+*Example 3: Two runs, two raw disks, two workloads.
+
+sd=sd1,lun=/dev/nvme0n1p1,openflags=o_direct,threads=16,size=1.5g
+sd=sd2,lun=/dev/nvme0n1p2,openflags=o_direct,threads=16,size=0.5g
+sd=sd3,lun=/dev/nvme0n1p3,openflags=o_direct,threads=16,size=1.5g
+sd=sd4,lun=/dev/nvme0n1p4,openflags=o_direct,threads=16,size=5g
+wd=wd1,sd=sd1,xfersize=4096,seekpct=10,rdpct=0
+wd=wd2,sd=sd2,xfersize=4096,seekpct=50,rdpct=20
+wd=wd3,sd=sd3,xfersize=4096,seekpct=100,rdpct=0,range=(1,50)
+wd=wd4,sd=sd4,xfersize=4096,seekpct=100,rdpct=100
+rd=run1,wd=wd*,iorate=max,elapsed=600,interval=15,warmup=0
+
+*Run1: Two raw disks with a combined workload of 50 4k i/o's per second, r/w ratio of 3:1, and a workload of 50 8k reads per second. Run2: same with twice the i/o rate.
+
+*This can also be run as:
+*rd=run1,wd=(wd1,wd2),iorate=(100,200),elapsed=10,interval=1
+

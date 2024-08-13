@@ -1,0 +1,9 @@
+VSSD/WAOPSHARE --- 
+1.8 怀疑Victim Line有问题，需要改为遍历 - Done 
+1.9 deltax为负 - 负载问题/统计问题 - 整个写放大如何测试
+    ssd->users[user_id].tt_cmp_pgs 需要统计实际放出的op空间
+    REST+REST
+    测试：compaction选择的是不是后0.5G （输出T_written）
+    负载：lpn偏移
+    WAF_begin = (com_cnt[0] + wrt_cnt[168629] + gc_cnt[73800]) / wrt_cnt[168629] = 1.437647REST TIME DONE... [1
+    WAF_end = (com_cnt[148157] + wrt_cnt[990614] + gc_cnt[312951]) / wrt_cnt[990614] = 1.465477MEASURE TIME DONE... [1]WAF_END = 1.465477, deltax = -0.001070

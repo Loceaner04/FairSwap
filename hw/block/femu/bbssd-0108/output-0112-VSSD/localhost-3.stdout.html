@@ -1,0 +1,46 @@
+<title>Vdbench output/localhost-3.stdout.html</title><pre>
+stdout/stderr for slave=localhost-3
+
+15:50:36.566 15:50:36.565 SlaveJvm execution parameter:  '-m localhost'
+15:50:36.566 15:50:36.566 SlaveJvm execution parameter:  '-n localhost-13-240112-15.50.36.116'
+15:50:36.567 15:50:36.566 SlaveJvm execution parameter:  '-l localhost-3'
+15:50:36.567 15:50:36.566 SlaveJvm execution parameter:  '-p 5570'
+15:50:36.567 15:50:36.566 SlaveJvm positional parameter: 'SlaveJvm'
+15:50:36.742 15:50:36.741 successfully connected to master localhost
+15:50:36.743 15:50:36.742 Connection to localhost using port 5570 successful
+
+Link to Run Definitions:         <A HREF="#_914424520">run1 For loops: None</A>
+
+15:50:37.214 15:50:37.214 Beginning of run setup
+15:50:37.214 15:50:37.214 **********************
+15:50:37.214 
+15:50:37.215 
+15:50:37.366 15:50:37.365 Opening sd=sd1,lun=/dev/nvme0n1p1; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+15:50:37.369 15:50:37.368 Opening sd=sd2,lun=/dev/nvme0n1p2; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+15:50:37.369 15:50:37.369 Opening sd=sd3,lun=/dev/nvme0n1p3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+15:50:37.369 15:50:37.369 Opening sd=sd4,lun=/dev/nvme0n1p4; write: false; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+15:50:37.386 15:50:37.385 Started 4 Workload Generator threads.
+15:50:37.452 15:50:37.452 Started  4 i/o threads for sd2
+15:50:37.454 15:50:37.454 Started  4 i/o threads for sd1
+15:50:37.486 15:50:37.485 Started  4 i/o threads for sd4
+15:50:37.489 15:50:37.489 Started  4 i/o threads for sd3
+15:50:37.490 15:50:37.489 Started a total of 16 i/o threads.
+15:50:37.490 15:50:37.489 Waiting for task synchronization
+15:50:37.490 15:50:37.489 task_wait_start_complete: IO_task /dev/nvme0n1p1 1
+15:50:37.691 15:50:37.690 Requesting full garbage collection
+15:50:37.694 15:50:37.693 GcTracker: cum:   1 intv:  1 ms:      24 mss:  0.00% Heap_MB max:   911 curr:   252 used:   152 free:   100 
+15:50:37.770 15:50:37.770 GcTracker: cum:   3 intv:  2 ms:      75 mss:  0.00% Heap_MB max:   911 curr:   284 used:    18 free:   266 
+15:50:37.771 15:50:37.770 task_wait_start_complete() end
+
+<a name="_914424520"></a><i><b>15:50:38.002 Starting RD=run1; I/O rate: Uncontrolled MAX; elapsed=600; For loops: None</b></i>
+
+15:50:38.005 15:50:38.005 task_run_all(): 20 tasks
+16:00:38.168 16:00:38.167 Sent 16 interrupts to 16 waiting IO_task threads
+16:00:38.169 16:00:38.169 Java Heap in MB. max:  910.500; current:  253.500; used:   49.383; free:  204.117
+16:00:38.169 16:00:38.169 Maximum native memory allocation:      114,688; Current allocation:            0
+16:00:38.171 16:00:38.169 End of run
+16:00:38.171 16:00:38.170 **********
+16:00:38.171 
+16:00:38.171 
+16:00:39.142 16:00:39.141 Master is requesting slave shutdown
+16:00:39.142 16:00:39.142 Java Heap in MB. max:  910.500; current:  253.500; used:   49.385; free:  204.115
